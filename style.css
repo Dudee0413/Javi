@@ -34,18 +34,14 @@ section {
 
 .circle-menu {
     position: relative;
-    width: min(320px, 90vw);
-    height: min(320px, 90vw);
+    width: min(420px, 95vw);
     margin: 1.5rem auto;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, rgba(70,127,207,0.06), transparent 42%);
 }
 
-.circle-menu::before {
-    content: "";
-    position: absolute;
-    inset: 15%;
-    border: 3px dashed rgba(70,127,207,0.6);
+.circle-bg {
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: 50%;
 }
 
@@ -54,7 +50,7 @@ section {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background: #467fcf;
+    background: rgba(70, 127, 207, 0.9);
     color: white;
     text-align: center;
     display: flex;
@@ -63,12 +59,12 @@ section {
     text-decoration: none;
     transition: transform 0.2s ease, background 0.2s ease;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transform: var(--position-transform);
+    transform: translate(-50%, -50%);
 }
 
 .circle-button:hover {
     background: #3057a2;
-    transform: var(--position-transform) scale(1.08);
+    transform: translate(-50%, -50%) scale(1.08);
 }
 
 .circle-button .button-title {
@@ -97,29 +93,28 @@ section {
 }
 
 .circle-button.top-left {
-    top: 25%;
-    left: 20%;
+    top: 24%;
+    left: 18%;
 }
 
 .circle-button.top {
-    top: 5%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, 0);
 }
 
 .circle-button.top-right {
-    top: 25%;
-    right: 20%;
+    top: 24%;
+    left: 82%;
 }
 
 .circle-button.bottom-right {
-    bottom: 25%;
-    right: 20%;
+    top: 64%;
+    left: 77%;
 }
 
 .circle-button.bottom-left {
-    bottom: 25%;
-    left: 20%;
+    top: 64%;
+    left: 23%;
 }
 
 .member {
