@@ -35,14 +35,11 @@ section {
 .circle-menu {
     position: relative;
     width: min(420px, 95vw);
+    height: min(420px, 95vw);
     margin: 1.5rem auto;
-}
-
-.circle-bg {
-    width: 100%;
-    height: auto;
-    display: block;
     border-radius: 50%;
+    background: url('IMG_3186.jpg') center/contain no-repeat;
+    background-color: #fff;
 }
 
 .circle-button {
