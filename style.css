@@ -104,28 +104,28 @@ section {
 }
 
 .circle-button.top-left {
-    top: 24%;
-    left: 20%;
+    top: 22%;
+    left: 18%;
 }
 
 .circle-button.top {
-    top: 14%;
+    top: 12%;
     left: 50%;
 }
 
 .circle-button.top-right {
-    top: 24%;
-    left: 80%;
+    top: 22%;
+    left: 82%;
 }
 
 .circle-button.bottom-right {
-    top: 72%;
-    left: 79%;
+    top: 70%;
+    left: 78%;
 }
 
 .circle-button.bottom-left {
-    top: 72%;
-    left: 21%;
+    top: 70%;
+    left: 22%;
 }
 
 @media (max-width: 500px) {
