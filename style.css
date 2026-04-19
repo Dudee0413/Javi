@@ -35,11 +35,14 @@ section {
 .circle-menu {
     position: relative;
     width: min(420px, 95vw);
-    height: min(420px, 95vw);
+    max-width: 420px;
     margin: 1.5rem auto;
+}
+
+.circle-bg {
+    width: 100%;
+    display: block;
     border-radius: 50%;
-    background: url('IMG_3186.jpg') center/contain no-repeat;
-    background-color: #fff;
 }
 
 .circle-button {
@@ -92,27 +95,27 @@ section {
 
 .circle-button.top-left {
     top: 24%;
-    left: 18%;
+    left: 19%;
 }
 
 .circle-button.top {
-    top: 10%;
+    top: 14%;
     left: 50%;
 }
 
 .circle-button.top-right {
     top: 24%;
-    left: 82%;
+    left: 81%;
 }
 
 .circle-button.bottom-right {
-    top: 64%;
-    left: 77%;
+    top: 72%;
+    left: 79%;
 }
 
 .circle-button.bottom-left {
-    top: 64%;
-    left: 23%;
+    top: 72%;
+    left: 21%;
 }
 
 .member {
