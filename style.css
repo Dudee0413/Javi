@@ -50,21 +50,23 @@ section {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background: rgba(70, 127, 207, 0.9);
-    color: white;
+    background: transparent;
+    border: 1.5px solid rgba(0, 0, 0, 0.8);
+    color: #111;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: transform 0.2s ease, background 0.2s ease;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
     transform: translate(-50%, -50%);
     font-size: 1rem;
 }
 
 .circle-button:hover {
-    background: #3057a2;
+    background: rgba(255, 255, 255, 0.7);
+    border-color: rgba(0, 0, 0, 1);
     transform: translate(-50%, -50%) scale(1.08);
 }
 
@@ -116,6 +118,44 @@ section {
 .circle-button.bottom-left {
     top: 72%;
     left: 21%;
+}
+
+@media (max-width: 500px) {
+    .circle-menu {
+        width: 90vw;
+        max-width: 360px;
+    }
+
+    .circle-button {
+        width: 64px;
+        height: 64px;
+        font-size: 0.8rem;
+    }
+
+    .circle-button.top-left {
+        top: 22%;
+        left: 16%;
+    }
+
+    .circle-button.top {
+        top: 12%;
+        left: 50%;
+    }
+
+    .circle-button.top-right {
+        top: 22%;
+        left: 84%;
+    }
+
+    .circle-button.bottom-right {
+        top: 70%;
+        left: 81%;
+    }
+
+    .circle-button.bottom-left {
+        top: 70%;
+        left: 19%;
+    }
 }
 
 .member {
