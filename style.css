@@ -44,8 +44,8 @@ section {
 
 .circle-button {
     position: absolute;
-    width: 72px;
-    height: 72px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background: rgba(70, 127, 207, 0.9);
     color: white;
@@ -57,7 +57,7 @@ section {
     transition: transform 0.2s ease, background 0.2s ease;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transform: translate(-50%, -50%);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .circle-button:hover {
