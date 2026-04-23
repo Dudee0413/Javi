@@ -63,3 +63,33 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+/* ===== MOBIL VERZIÓ ===== */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
