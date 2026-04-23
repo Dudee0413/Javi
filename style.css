@@ -1,185 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 2rem;
-    margin: 1rem;
-}
-
-.circle-menu {
-    position: relative;
-    width: min(420px, calc(100vw - 32px));
-    max-width: 420px;
-    aspect-ratio: 1 / 1;
-    margin: 1.5rem auto;
+    height: 100vh;
+    background: radial-gradient(circle at center, #1a1a1a, #0a0a0a);
+    font-family: Arial, sans-serif;
     overflow: hidden;
 }
 
-.circle-bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: contain;
-    z-index: 1;
-}
-
-.circle-button {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.24);
-    border: 2px solid #000;
-    color: #0f5ccd;
-    text-align: center;
+.container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transform: translate(-50%, -50%);
-    font-size: 1rem;
-    z-index: 2;
+    align-items: center;
+    height: 100%;
 }
 
-.circle-button:hover {
-    background: rgba(255, 255, 255, 0.72);
-    border-color: #000;
-    transform: translate(-50%, -50%) scale(1.08);
+/* ===== CIRCLE MENU ===== */
+
+.circle-menu {
+    position: relative;
+    width: 400px;
+    height: 400px;
 }
 
-.circle-button .button-title {
-    font-weight: 700;
-    padding: 0.2rem 0.35rem;
-    line-height: 1.1;
-}
+/* ===== GOMBOK ===== */
 
-.circle-button .tooltip {
+.circle {
     position: absolute;
-    bottom: -2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    background: rgba(51, 51, 51, 0.95);
-    color: white;
-    padding: 0.35rem 0.65rem;
-    border-radius: 0.5rem;
-    font-size: 0.8rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(23, 134, 230, 0.08);
+    color: rgb(226, 182, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    backdrop-filter: blur(8px);
+
+    transform: scale(0);
     opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s ease;
+
+    transition: 0.3s;
 }
 
-.circle-button:hover .tooltip {
-    opacity: 1;
+/* Hover */
+.circle:hover {
+    transform: scale(1.2);
+    background: rgba(22, 155, 232, 0.2);
 }
 
-.circle-button.top-left {
-    top: 32%;
-    left: 25%;
-}
+/* ===== POZÍCIÓK ===== */
 
-.circle-button.top {
-    top: 15%;
-    left: 50%;
-}
+.c1 { top: 45%; left: 0%; transform: translate(-50%, -50%); }
+.c2 { top: 0%; left: 50%; transform: translate(-50%, -50%); }
+.c3 { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+.c4 { top: 105%; left: 80%; transform: translate(-50%, -50%); }
+.c5 { top: 105%; left: 20%; transform: translate(-50%, -50%); }
 
-.circle-button.top-right {
-    top: 32%;
-    left: 75%;
-}
+/* ===== ANIMÁCIÓ ===== */
 
-.circle-button.bottom-right {
-    top: 60%;
-    left: 65%;
-}
-
-.circle-button.bottom-left {
-    top: 60%;
-    left: 35%;
-}
-
-@media (max-width: 500px) {
-    .circle-menu {
-        width: calc(100vw - 32px);
-        max-width: 360px;
+@keyframes pop {
+    0% {
+        transform: scale(0) translate(-50%, -50%);
+        opacity: 0;
     }
-
-    .circle-button {
-        width: 64px;
-        height: 64px;
-        font-size: 0.8rem;
-    }
-
-    .circle-button.top-left {
-        top: 22%;
-        left: 18%;
-    }
-
-    .circle-button.top {
-        top: 13%;
-        left: 50%;
-    }
-
-    .circle-button.top-right {
-        top: 22%;
-        left: 82%;
-    }
-
-    .circle-button.bottom-right {
-        top: 72%;
-        left: 80%;
-    }
-
-    .circle-button.bottom-left {
-        top: 72%;
-        left: 20%;
+    100% {
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
     }
 }
 
-.member {
-    margin-bottom: 1rem;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-body {
-    padding-bottom: 4rem;
-}
+.c1 { animation: pop 0.6s ease forwards; animation-delay: 0.2s; }
+.c2 { animation: pop 0.6s ease forwards; animation-delay: 0.4s; }
+.c3 { animation: pop 0.6s ease forwards; animation-delay: 0.6s; }
+.c4 { animation: pop 0.6s ease forwards; animation-delay: 0.8s; }
+.c5 { animation: pop 0.6s ease forwards; animation-delay: 1s; }
