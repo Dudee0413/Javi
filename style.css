@@ -80,20 +80,20 @@ body {
 
 @media (max-width: 768px) {
     .circle-menu {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     .circle {
-        width: 80px;
-        height: 80px;
-        font-size: 12px;
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
     }
 
-    /* Módosított pozíciók mobilra */
-    .c1 { top: 50%; left: 0%; transform: translate(-50%, -50%); }
-    .c2 { top: 0%; left: 25%; transform: translate(-50%, -50%); }
-    .c3 { top: 0%; left: 75%; transform: translate(-50%, -50%); }
-    .c4 { top: 100%; left: 75%; transform: translate(-50%, -50%); }
-    .c5 { top: 100%; left: 25%; transform: translate(-50%, -50%); }
+    /* Javított pozíciók mobilra - kör alakú elrendezés */
+    .c1 { top: 20%; left: 50%; transform: translate(-50%, -50%); }
+    .c2 { top: 35%; left: 15%; transform: translate(-50%, -50%); }
+    .c3 { top: 35%; left: 85%; transform: translate(-50%, -50%); }
+    .c4 { top: 65%; left: 15%; transform: translate(-50%, -50%); }
+    .c5 { top: 65%; left: 85%; transform: translate(-50%, -50%); }
 }
