@@ -85,15 +85,20 @@ body {
     }
 
     .circle {
-        width: 60px;
-        height: 60px;
-        font-size: 10px;
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
     }
 
     /* Javított pozíciók mobilra - kör alakú elrendezés */
-    .c1 { top: 20%; left: 50%; transform: translate(-50%, -50%); }
-    .c2 { top: 35%; left: 15%; transform: translate(-50%, -50%); }
-    .c3 { top: 35%; left: 85%; transform: translate(-50%, -50%); }
-    .c4 { top: 65%; left: 15%; transform: translate(-50%, -50%); }
-    .c5 { top: 65%; left: 85%; transform: translate(-50%, -50%); }
+    /* középső */
+    .c1 { top: -45%; left: 50%; transform: translate(-50%, -50%); }
+    /* bal also */
+    .c2 { top: 45%; left: 5%; transform: translate(-50%, -50%); }
+    /* jobb also */
+    .c3 { top: 45%; left: 95%; transform: translate(-50%, -50%); }
+    /* bal also */
+    .c4 { top: 140%; left: 5%; transform: translate(-50%, -50%); }
+    /* jobb also */
+    .c5 { top: 140%; left: 95%; transform: translate(-50%, -50%); }
 }
